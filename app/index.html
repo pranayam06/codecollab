@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
+    
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> CodeCollab </title> 
     <link href="style.css" rel="stylesheet">  
-    <script defer src="app.js"> </script>
+    
 </head>
 <body> 
     <div class="sidenav">
@@ -16,7 +18,21 @@
       
       <div class="content">
         <h2> CodeCollab </h2>
-        <textarea placeholder="Your Code" wrap="hard" > </textarea> 
+        <input placeholder="Enter some text" name="name" />
+        <p id="values"></p> 
+        <script>      
+            console.log("Inline script loaded");  
+    
+            const input = document.querySelector("input");
+            const log = document.getElementById("values");
+    
+            input.addEventListener("input", updateValue);
+    
+            function updateValue(e) {
+                log.textContent = e.target.value;
+            }
+    
+        </script>
      </div>
     
 </body>
