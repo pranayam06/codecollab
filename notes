@@ -1,0 +1,21 @@
+1 - text area UI 
+
+2 - calculating whether theyre insertion, deletion, splices 
+
+3 - websockets sent to server side 
+
+4 - serverside queue that handles changes using JOT and json 
+
+5 - each change is transformed against previous operations 
+
+6 - changes are popped 
+
+tomorrow: 
+
+cleanup your app.js code so it implements document changes 
+
+then use cases to capture transformations 
+
+setup queue 
+
+day after, implement ui and code editor :
