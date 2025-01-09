@@ -1,4 +1,4 @@
-const socket = io('ws://localhost:3000')
+const socket = io('ws://localhost:3500')
 
 const input = document.querySelector("textarea");
 const log = document.getElementById("values");
@@ -13,7 +13,7 @@ function updateValue(e) {
 socket.on("message", (data) => { 
     console.log("socket message recieved")
     console.log(data)
-    input.textContent = data;
+    input.value = data;
     log.textContent = data; 
 
 })
