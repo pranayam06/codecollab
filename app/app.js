@@ -1,7 +1,7 @@
 const socket = io('ws://localhost:3500')
 
 const input = document.querySelector("textarea");
-const log = document.getElementById("values");
+const log = document.getElementById("output");
     
 input.addEventListener("input", updateValue);
     

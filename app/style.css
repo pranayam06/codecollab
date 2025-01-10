@@ -74,6 +74,20 @@ body {
   border-radius: 4px;
   resize: none;
   padding: 10px;
-  font-size: 14px;
-  background-color: #fff;
-}
+  font-size: 16px; 
+  
+ }
+ 
+ #code_editor {
+  background-color: #fff;  
+  font-family: 'Trebuchet MS', sans-serif;
+
+ }
+
+ #output {
+  background-color: #2f2f2f; 
+  color:#b3b3b3; 
+  font-family: 'Courier New', monospace; 
+  font-size: medium;
+
+ }
