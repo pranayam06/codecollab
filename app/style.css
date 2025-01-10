@@ -17,22 +17,42 @@
     top: 0;
     left: 0;
     background-color: #999;
-    overflow-x: hidden;
+    overflow-x: hidden; 
+
+
   }
+
+  .sidenav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Removes bullet points */
+}
+
+.sidenav h3 {
+  margin: auto; 
+  text-align: left;
+  padding: 15px; 
+  color: #4a4a4a;
+}
   
   
   /* Side navigation links */
-  .sidenav a {
+  .sidenav li {
     color: white;
     padding: 16px;
     text-decoration: none;
-    display: block;
-  }
+    display: block; 
+    width: 100%; /* Ensures the element spans the container */
+}
   
+  
+
   /* Change color on hover */
-  .sidenav a:hover {
+  .sidenav li:hover {
     background-color: #ddd;
-    color: black;
+    color: black;  
+    width: 100%;
+
   }
   
   /* Style the content */
