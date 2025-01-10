@@ -9,11 +9,13 @@ const io = new Server(httpServer, {
 let collaborators = []
 
 io.on('connection', socket => {   
-    collaborators.push(socket.id)   
-    console.log(`User: ${socket.id} connected`)  
+    let id = (socket.id).slice(0, 5)
+    collaborators.push(id)   
+    console.log(`User: ${socket.id} connected`)   
+    console.log(id)
 
     socket.on("disconnect", (reason) => { 
-        var index = collaborators.indexOf(`${socket.id}`)
+        var index = collaborators.indexOf(id)
         collaborators.splice(index, 1) 
         io.emit("rerender collaborators", collaborators)
     })
