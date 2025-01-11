@@ -1,11 +1,8 @@
-import {EditorView, basicSetup} from "codemirror"
-import {javascript} from "@codemirror/lang-javascript"
+const socket = io('ws://localhost:3500') 
 
-const socket = io('ws://localhost:3500')
 
 const input = document.querySelector("textarea");
 const log = document.getElementById("output"); 
-
 
     
 input.addEventListener("input", updateValue);
